@@ -1,0 +1,259 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: url(https://www.teahub.io/photos/full/88-882054_introduction-to-html-and-javascript-html-code-wallpaper.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.main-info {
+	/* background-color: #ffffff; */
+	background: url(data:image/jpeg;base64,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);
+	display: flex;
+	max-width: 1200px;
+	min-width: 800px;
+	margin: 0 auto;
+	box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.saidbar {
+	background-image: url(https://million-wallpapers.ru/wallpapers/2/87/492561881628671.jpg);
+	width: 370px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.my-photo {
+	width: 370px;
+}
+
+.about-me-info {
+	padding-left: 90px;
+	padding-right: 90px;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.contacts {
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.contacts-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.contacts-info {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: rgb(230, 230, 230);
+}
+
+.contacts-i {
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-right: 10px;
+}
+
+.photo-inst {
+	line-height: 24px;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+}
+.tech-skills {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 55px;
+}
+
+.tech-skills-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	color: white;
+	margin-bottom: 20px;
+}
+.tech-li {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: orangered;
+	margin-left: 15px;
+}
+
+.tech-text {
+	color: white;
+}
+
+.soft-skills {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 55px;
+}
+
+.soft-skills-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.soft-item {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: orangered;
+	margin-left: 15px;
+}
+
+.soft-text {
+	color: white;
+}
+
+.me-profession {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 23px;
+}
+
+.me-name {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 89px;
+	margin-bottom: 25px;
+}
+
+.description {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 25px;
+	color: black;
+}
+
+.about-me {
+	margin-bottom: 65px;
+}
+
+.about-me-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.project-link {
+	color: #595959;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.tech-name {
+	color: #595959;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.dots {
+	color: #595959;
+	font-weight: 100;
+}
+
+.project-item {
+	font-weight: 700;
+	margin-left: 15px;
+}
+
+.project {
+	margin-bottom: 55px;
+}
+
+.profession-title {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.prof-comp {
+	color: #ff6b08;
+}
+
+.time-work {
+	color: #464646;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.divider {
+	color: black;
+	font-weight: 400;
+}
+
+.prof-duits {
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+
+.prof-duits-item {
+	color: #595959;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.education {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.education-name {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #ff6b08;
+	margin-bottom: 15px;
+}
+
+.education-info {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	padding-bottom: 15px;
+}
+
+.time-education {
+	color: #8d8d8d;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+}
